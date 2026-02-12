@@ -20,7 +20,7 @@ struct MatchPegs: View {
                 MatchMaker(peg: 0)
                 MatchMaker(peg: 1)
             }
-            HStack(spacing: 0){
+            HStack{
                 MatchMaker(peg: 2)
                 MatchMaker(peg: 3)
             }
@@ -41,5 +41,5 @@ struct MatchPegs: View {
 }
 
 #Preview {
-    MatchPegs(matches: [.exact, .inexact, .nomatch, .exact])
+    MatchPegs(matches: [.exact, .exact, .exact, .exact])
 }
