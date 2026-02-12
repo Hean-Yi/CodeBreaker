@@ -74,7 +74,7 @@ struct Code {
         for index in pegs.indices.reversed() {
             if results[index] != .exact {
                 if let matchIndex = pegsToMatch.firstIndex(of: pegs[index]) {
-                    results[matchIndex] = .inexact
+                    results[index] = .inexact
                     pegsToMatch.remove(at: matchIndex)
                 }
             }
